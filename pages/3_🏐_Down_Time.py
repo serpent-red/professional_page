@@ -9,22 +9,36 @@ st.set_page_config(
 	menu_items=None
 )
 
-st.info(
-	"🛠 This section is currently under construction and is actively being " +\
-	"built out and completed."
-)
-
 st.title("Volleyball")
+st.markdown(
+	"I have been an avid volleyball player since middle school and have been " +\
+	"consistently playing the sport for the last 15 years. This includes " +\
+	"everything from pickup games to national tournaments. However, the most " +\
+	"enjoyable playtime since moving to Pittsburgh comes from playing in the " +\
+	"[Steel City Volleyball League](https://www.steelcityvolleyball.org/)."
+)
 vball_pics = st.expander("Pics")
 for f in os.listdir("images/vball"):
 	vball_pics.image(f"images/vball/{f}", use_column_width=True)
 
 st.title("Games")
+st.write(
+	"On the lighter side of my leisure activities is playing all kinds of games, " +\
+	"including board games, card games, and video games. I've included a few of " +\
+	"my favorites below!"
+)
 games_pics = st.expander("Pics")
 for f in os.listdir("images/games"):
 	games_pics.image(f"images/games/{f}", width=100)
 
-st.title("Traveling")
+st.title("Roadtrips")
 travel_pics = st.expander("Pics")
+st.write(
+	"Having been homeschooled, I ended up doing a lot of school work in the car " +\
+	"while traveling as I was growing up. My mom and I regularly did roadtrips " +\
+	"around the eastern US and infrequently flew everywhere around the country. " +\
+	"While flying is fun, the roadtrips were truly magical and as I have " +\
+	"gotten older, my love of roadtrips continues to grow!"
+)
 for f in os.listdir("images/travel"):
 	travel_pics.image(f"images/travel/{f}", use_column_width=True)
