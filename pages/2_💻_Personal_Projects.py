@@ -14,8 +14,22 @@ st.info(
 )
 
 st.header("Streetview Predictor")
+st.write(
+	"This project is an image classifier built in python's Tensorflow " +\
+	"library. This classifier could take a google streetview image " +\
+	"as an input and predict the country of origin with about 20% " +\
+	"accuracy. I was inspired to start this project when the " +\
+	"[GeoGuessr](https://www.geoguessr.com/) trend started towards " +\
+	"the beginning of the pandemic."
+)
 
 st.header("Discord Bots")
+st.write(
+	"This project contains a variety of python bots that are housed " +\
+	"in multiple discord servers that I have set up and maintain. " +\
+	"Some of these bots provide utility (data collection and recall), " +\
+	"while others are simply there for amusement (sending funny messages)." 
+)
 
 st.header("Portfolio Dashboard")
 src1_exp = st.expander("Source Code for this Page")
