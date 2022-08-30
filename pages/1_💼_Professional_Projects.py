@@ -8,10 +8,6 @@ st.set_page_config(
 	menu_items=None
 )
 
-st.warning(
-	"🛠 This section is currently under construction and is actively being " +\
-	"built out and completed."
-)
 st.info(
 	"Due to the confidential/proprietary nature of many of these projects, I " +\
 	"am unable to share code from these projects. However, I do discuss " +\
@@ -21,10 +17,21 @@ st.info(
 
 st.header("Newton IM")
 nim_exp = st.expander("Projects")
-nim_exp.subheader("Agility Prime")
 nim_exp.subheader("Dashboarding")
+nim_exp.write(
+	"Led internal research into state-of-the-art dashboarding technologies, " +\
+	"presented findings to senior management, and ultimately convinced them " +\
+	"to transition away from Dash and adopt Streamlit instead."
+)
+
 nim_exp.subheader("Dockerization")
-nim_exp.subheader("Production Operations")
+nim_exp.write(
+	"Containerized our python applications to support the proper testing " +\
+	"of applications prior to deployments, which led to a significant decrease " +\
+	"in the number of required redeployments. Additionally, I assembled a set of " +\
+	"Dockerfiles that allowed the test environments to access hard-to-reach " +\
+	"internal package repositories."
+)
 
 
 st.header("VISIMO")
@@ -76,8 +83,22 @@ vis_exp.write(
 st.header("SAP Ariba")
 sap_exp = st.expander("Projects")
 sap_exp.subheader("Demand Forecasting")
+sap_exp.write(
+	"Used a variety of time series algorithms, including temporal regression, " +\
+	"ARIMA, and vector autoregression, to improve demand forecasting. In " +\
+	"addition to coding the models, I also conducted testing and validation using" +\
+	"a rolling horizon."
+)
 
 
 st.header("Mylan")
 myl_exp = st.expander("Projects")
 myl_exp.subheader("International Sales Markets")
+myl_exp.write(
+	"Worked as part of an intern team that conducted research on high " +\
+	"potential international markets to enter. As part of this project, we " +\
+	"found external demographic data, combined it with internal sales data, " +\
+	"performed dimension reduction, and fit a regression model to the data. " +\
+	"After all analysis had been completed, we presented our findings to the " +\
+	"intern team leads and additional management."
+)
