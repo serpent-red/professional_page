@@ -32,7 +32,6 @@ for f in os.listdir("images/games"):
 	games_pics.image(f"images/games/{f}", use_column_width=True)
 
 st.title("Roadtrips")
-travel_pics = st.expander("Pics")
 st.write(
 	"Having been homeschooled, I ended up doing a lot of school work in the car " +\
 	"while traveling as I was growing up. My mom and I regularly did roadtrips " +\
@@ -40,5 +39,6 @@ st.write(
 	"While flying is fun, the roadtrips were truly magical and as I have " +\
 	"gotten older, my love of roadtrips continues to grow!"
 )
+travel_pics = st.expander("Pics")
 for f in os.listdir("images/travel"):
 	travel_pics.image(f"images/travel/{f}", use_column_width=True)
