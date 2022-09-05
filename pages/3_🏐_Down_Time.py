@@ -29,7 +29,7 @@ st.write(
 )
 games_pics = st.expander("Pics")
 for f in os.listdir("images/games"):
-	games_pics.image(f"images/games/{f}", width=100)
+	games_pics.image(f"images/games/{f}", use_column_width=True)
 
 st.title("Roadtrips")
 travel_pics = st.expander("Pics")
