@@ -41,5 +41,5 @@ st.write(
 )
 travel_pics = st.expander("Pics")
 for f in os.listdir("images/travel"):
-	travel_pics.subheader(f.replace(".csv", "").replace("_", " "))
+	travel_pics.subheader(f.replace(".png", "").replace(".jpg", "").replace("_", " "))
 	travel_pics.image(f"images/travel/{f}", use_column_width=True)
