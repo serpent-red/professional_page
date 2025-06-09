@@ -19,4 +19,4 @@ st.markdown(
 	"making more of my repos public, but most of them are private for now)."
 )
 
-st.image("images/dog.gif", use_column_width=True)
+st.image("images/dog.gif", use_container_width=True)

@@ -19,7 +19,7 @@ st.markdown(
 )
 vball_pics = st.expander("Pics")
 for f in os.listdir("images/vball"):
-	vball_pics.image(f"images/vball/{f}", use_column_width=True)
+	vball_pics.image(f"images/vball/{f}", use_container_width=True)
 
 st.title("Games")
 st.write(
@@ -29,7 +29,7 @@ st.write(
 )
 games_pics = st.expander("Pics")
 for f in os.listdir("images/games"):
-	games_pics.image(f"images/games/{f}", use_column_width=True)
+	games_pics.image(f"images/games/{f}", use_container_width=True)
 
 st.title("Roadtrips")
 st.write(
@@ -42,4 +42,4 @@ st.write(
 travel_pics = st.expander("Pics")
 for f in os.listdir("images/travel"):
 	travel_pics.subheader(f.replace(".png", "").replace(".jpg", "").replace("_", " "))
-	travel_pics.image(f"images/travel/{f}", use_column_width=True)
+	travel_pics.image(f"images/travel/{f}", use_container_width=True)
